@@ -1,0 +1,29 @@
+
+.container{
+    background:  #fff;
+    padding: 0 4.3rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(.9rem,1vw,1.1rem);
+}
+
+table th, table td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9rem;
+}
+
+body {
+    background: rgb(204,204,204); 
+  }
+
+
+.footer  .table td, .footer .table th {
+    padding: .1rem !important;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+
+}
