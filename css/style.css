@@ -6,18 +6,20 @@
 
 p {
     margin-top: 0;
-    margin-bottom: .4rem;
+    margin-bottom: .5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: clamp(.9rem,1vw,1.1rem);
 }
 
 table th, table td{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .9rem;
+    font-size: clamp(.9rem,1vw,1.1rem);
+    color: #333;
+    font-weight: 500;
 }
 
 body {
-    background: rgb(204,204,204); 
+    background: #818181;
   }
 
 
@@ -27,3 +29,48 @@ body {
     border-top: 1px solid #dee2e6;
 
 }
+
+a{
+    list-style: none;
+    color: #333;
+}
+
+a:hover{
+    list-style: none;
+    color: #006937;
+}
+
+
+.custom-btn a{
+    background:#ccc;
+    color: #666;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: Arial;
+    position:relative
+}
+
+.custom-btn a:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-width: 0px 0px 13px 13px;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.custom-btn a:hover{
+   background: #05944f;
+   list-style: none;
+   color: #fff;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+}
+
