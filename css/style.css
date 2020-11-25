@@ -33,11 +33,13 @@ body {
 a{
     list-style: none;
     color: #333;
+    text-decoration:none;
 }
 
 a:hover{
     list-style: none;
     color: #006937;
+    text-decoration:none;
 }
 
 
@@ -73,4 +75,118 @@ a:hover{
     vertical-align: bottom;
     border-bottom: 1px solid #dee2e6;
 }
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: FontAwesome;
+	src: url(data:application/x-font-woff;charset=utf-8;base64,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) format('woff');
+}
+
+.content, .file {
+	position: fixed;
+	background: #f8f8f8;
+	border-radius: 3px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+
+
+.file {
+	left: calc(50% - 135px);
+	width: 270px;
+	height: 36px;
+	border: 1px solid #4CAF50;
+	opacity: 1;
+	transition: .8s;
+	transition-delay: 1.8s;
+}
+
+.text {
+	margin-left: 45px;
+	font: bold 11pt Verdana;
+	line-height: 36px;
+	color: #666;
+}
+
+.text:before {
+		content: '\f15c';
+		position: absolute;
+		font: 16pt FontAwesome;
+		transform: translate(-28px, 7px);
+}
+
+	.text:after {
+		/* content: '(Slip)'*/
+		position: absolute;
+		margin-left: 8px;
+		color: #626262;
+	}
+
+.field {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	color: #fff;
+	background: #03b549;
+	font: 16pt FontAwesome;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.field:hover {
+	background: #006937;
+}
+
+.fa.fa-print, .fa.fa-camera{
+    font-size: 1.8rem;
+    color: #ccc;
+}
+
+.fa.fa-print:hover, .fa.fa-camera:hover{
+    color: rgb(168, 165, 165);
+    transition: .2 ease;
+    cursor: pointer;
+}
+
+#uvlogo{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; /* Half the width */
+   z-index: 1;
+   opacity: .3;
+}
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+@media print {
+    .page-break { 
+        display: block; 
+        page-break-before: always; 
+        page-break-after:always;
+    }
+}
+
 
