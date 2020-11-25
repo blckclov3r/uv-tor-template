@@ -63,6 +63,7 @@ a:hover{
     border-color: #fff transparent;
     display: block;
     width: 0;
+    cursor: pointer;
 }
 
 .custom-btn a:hover{
@@ -185,8 +186,6 @@ html,body{
     .page-break { 
         display: block; 
         page-break-before: always; 
-        page-break-after:always;
+        page-break-after: auto;
     }
 }
-
-
